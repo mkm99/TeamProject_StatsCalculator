@@ -41,6 +41,12 @@ class MyTestCase(unittest.TestCase):
     def test_squareRoot(self):
         self.assertEqual(5, squareRoot(25))
 
+    def test_sqr2(self):
+        self.assertEqual(4, squareRoot(16))
+
+    def test_sqr3(self):
+        self.assertEqual(9, squareRoot(81))
+
 if __name__ == '__main__':
     unittest.main()
 
