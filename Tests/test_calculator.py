@@ -51,5 +51,32 @@ class MyTestCase(unittest.TestCase):
         self.result = division(24, 0)
         self.assertEqual(self.result, 'Cannot divide by 0')
 
+    '''
+    This section is to make sure the calculator will no work if strings are being passed as arguments
+    '''
+
+    def test_add_str(self):
+        self.assertEqual("Trying to use strings in calculator", addition("hi", " bye"))
+
+    def test_minus_str(self):
+        self.assertEqual("Trying to use strings in calculator", subtraction("no", " yes"))
+
+    def test_division_str(self):
+        self.assertEqual("Trying to use strings in calculator", division("dei", " boy"))
+
+    def test_exponentiation_str(self):
+        self.assertEqual("Trying to use strings in calculator", exponentiation("hi", " bye"))
+
+    def test_log_str(self):
+        self.assertEqual("Trying to use strings in calculator", logarithm("his", " brye"))
+
+    def test_multiplication_str(self):
+        self.assertEqual("Trying to use strings in calculator", multiply("hi", " bye"))
+
+    def test_squareRoot_str(self):
+        self.assertEqual("Trying to use strings in calculator", squareRoot("hi"))
+
+
+
 if __name__ == '__main__':
     unittest.main()
