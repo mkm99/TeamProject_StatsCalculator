@@ -9,6 +9,10 @@ class PickNumbersSeed():
         random.seed(theSeed)
 
         newList = PickNumbersNoSeed.pickNumbers(aList, rangeNum)
-        return newList
+
+        if not newList:
+            return "list is empty"
+        try:
+            return newList
 
 #print(Pick_with_seed.pickNumbers(3, [34,45,67,89,123,44], 4))
