@@ -51,6 +51,7 @@ class MyTestCase(unittest.TestCase):
         self.result = division(24, 0)
         self.assertEqual(self.result, 'Cannot divide by 0')
 
+
     '''
     This section is to make sure the calculator will no work if strings are being passed as arguments
     '''
