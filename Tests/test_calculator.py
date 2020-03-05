@@ -8,7 +8,7 @@ from Calculator.Division import division
 from Calculator.Exponentiation import exponentiation
 from Calculator.Logarithm import logarithm
 from Calculator.SquareRoot import squareRoot
-
+from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
@@ -47,7 +47,9 @@ class MyTestCase(unittest.TestCase):
     def test_sqr3(self):
         self.assertEqual(9, squareRoot(81))
 
+    def test_division_0(self):
+        self.result = division(24, 0)
+        self.assertEqual(self.result, 'Cannot divide by 0')
+
 if __name__ == '__main__':
     unittest.main()
-
-    x = squareRoot(100)
