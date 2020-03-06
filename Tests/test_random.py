@@ -76,6 +76,11 @@ class MyTestCase(unittest.TestCase):
         result = PickNumbersSeed.pickNumbers(3, myList, 5)
         self.assertEqual(result, [2, 1, 9, 8, 9])
 
+    def test_empty_list(self):
+        myList = []
+        result = PickNumbersSeed.pickNumbers(3, myList, 5)
+        self.assertEqual(result, 'list is empty')
+
 
 
 
