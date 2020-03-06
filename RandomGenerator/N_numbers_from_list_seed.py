@@ -8,14 +8,11 @@ class PickNumbersSeed():
     def pickNumbers(theSeed, aList, rangeNum):
         random.seed(theSeed)
 
-        lst = aList
-        if not lst:
-            return "list is empty"
+        size = len(aList)
+        if size == 0:
+            return "list is empty?"
 
         newList = PickNumbersNoSeed.pickNumbers(aList, rangeNum)
-
-        if not newList:
-            return "list is empty"
 
         return newList
 
