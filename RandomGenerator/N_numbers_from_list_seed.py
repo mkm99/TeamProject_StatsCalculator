@@ -8,7 +8,12 @@ class PickNumbersSeed():
     def pickNumbers(theSeed, aList, rangeNum):
         random.seed(theSeed)
 
+        size = len(aList)
+        if size == 0:
+            return "list is empty?"
+
         newList = PickNumbersNoSeed.pickNumbers(aList, rangeNum)
+
         return newList
 
 #print(Pick_with_seed.pickNumbers(3, [34,45,67,89,123,44], 4))
