@@ -17,7 +17,7 @@ class RandomList():
             aList.append(number)
 
         if not aList:
-            return "list is empty, choose different arguments for num1, num2"
+            return "list is empty, choose different arguments for num1 and/or num2"
 
         return aList
 
@@ -31,7 +31,7 @@ class RandomList():
             aList.append(number)
 
         if not aList:
-            return "list is empty, choose different arguments for num1, num2"
+            return "list is empty, choose different arguments for num1 and/or num2"
         return aList
 
 #print(RandomList.list_Of_Floats(20,9,2.1,36.50))
