@@ -11,7 +11,7 @@ This projects, we built an statistics calculator which have the following functi
 [Calculator Functions](/Overview.md)
 
 To make sure the calculator works correctly, test cases were added using **Unittest** framework.
-Four different test files were created
+Four different test files were created:
 - [Tests for Calculator](/Tests/test_calculator.py)
 - [Tests for Creation of random numbers](/Tests/test_random.py)
 - [Tests for Statistics Functions](/Tests/test_statistics_functions.py)
@@ -23,4 +23,6 @@ second function uses the built-in functions that exists in libraries such as **S
 utilize the same data, and both test functions **must produce the same results**, this way we make sure that the calculator is
 behaving as is supposed to.
 
- 
+Documentation for all the math operations and statistics formulas can be found in the following file:
+
+- [Operations and Formulas](/operations.md)
